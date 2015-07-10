@@ -1,0 +1,298 @@
+/* Utilidades */
+
+.U-line {
+	width: 3.12em;
+	height: 5px;
+	border: 0px solid;
+	background-color: #1E1E1E;
+}
+
+/* MainMenu */
+
+.MainMenu {
+	background: #1E1E1E;
+	text-align: center;
+	height: 3.75em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	border: 5px solid #1E1E1E;
+}
+
+.MainMenu-list {
+	margin: 0;
+	padding: 0;
+}
+
+.MainMenu-item {
+	display: inline-block;
+	margin-left: 1.5em;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.MainMenu-item:hover {
+	background-color: orange;
+	border-radius: 2px;
+}
+
+
+.MainMenu-link {
+	text-decoration: none;
+	color: white;
+	height: 60px;
+	line-height: 3.75em;
+}
+
+.Me {
+	background: orange;
+	margin-top: 3.75em;
+	padding: 1.2em 0;
+	text-align: center;
+	margin:0; /* Borra los espacios entre contenedores, por defecto el margin es 60 */
+}
+
+.Me-imageContainer {
+	margin: 0;
+	margin-top: 3.75em; /* tamaño del MainMenu, se le añade para que coja el ancho de este*/
+}
+
+.Me-image {
+	border: 5px solid #1E1E1E;
+	background: #1E1E1E;
+	border-radius: 50%;
+}
+
+.Me-descriptionName,
+.Me-descriptionWork {
+	color: white;
+}
+
+.Me-descriptionName{
+	font-size: 2.5em;
+	font-weight: bold;
+	margin: 0;
+}
+
+
+.Me-descriptionWork {
+ 	font-size: 1.5em;
+    font-weight: 300;
+}
+
+/* Social Media*/
+
+.Social-list {
+	margin: 10px;
+	padding: 0;
+}
+
+.Social-item {
+	display: inline-block; 
+}
+
+#SocialCenter {
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+}
+
+/* Fondo circular */
+
+.Social-list li a {
+    display: block;
+    width: 40px;
+    border-radius: 100%;
+    line-height: 40px;
+    font-size: 1.25em;
+    border: 2px solid white;
+    color: white; /* #fff */
+    background-color: #1E1E1E;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+/* Efecto de iluminación */
+
+.Social-list li a:hover,
+.Social-list li a:focus,
+.Social-list li a:active {
+    background-color: orange;
+}
+
+
+/* About */
+
+.About {
+	background: lightgray;
+	margin-top: 3.75em;
+	padding: 1.2em 0;
+	text-align: center;
+	margin:0; /* Borra los espacios entre contenedores, por defecto el margin es 60 */
+}
+
+.AboutMe-title {
+	margin-top: 2.25em; /* tamaño del MainMenu, se le añade para que coja el ancho de este*/
+}
+
+.AboutMe-description {
+	font-size: 1.1em;
+	color: #515151;
+	/*margenes de la description de about*/
+	margin-right: 10em; 
+	margin-left: 10em;
+	font-style: italic;
+}
+
+/* About */
+
+.Work {
+	background: white;
+	margin-top: 3.75em;
+	padding: 1.2em 0;
+	text-align: center;
+	margin:0; /* Borra los espacios entre contenedores, por defecto el margin es 60 */
+}
+
+.Work-title {
+	margin-top: 2.25em; /* tamaño del MainMenu, se le añade para que coja el ancho de este*/
+}
+
+.Work-item {
+	display: inline-block;
+	margin-right: 1.2em;
+	margin-left: 1.2em;
+	margin-bottom: 1.8em;
+
+}
+
+.Work-containerDescription {
+	margin:0;
+	margin-top: 2.5em;
+	width: 20em; /*ancho del container -> Visualización del texto */
+
+}
+
+.Work-description {
+	font-size: 1.1em;
+	color: #1E1E1E;
+	font-style: italic;
+}
+
+
+
+.Job-link {
+	background-color: #428bca;
+    border-radius: 3px;
+  	color: #fdfdfd;
+  	display: inline-block;
+ 	padding: .25em 2em;
+ 	text-decoration: none;
+ 	-webkit-box-shadow: 2px 2px 5px green; /* Box shadow -> deben de ir los tres*/
+    -moz-box-shadow: 2px 2px 5px green;
+    box-shadow: 2px 2px 5px green;
+}
+
+.Job-link:hover {
+	background: #22639C;
+}
+
+
+.Contact {
+	background: lightgray;
+	margin-top: 3.75em;
+	padding: 1.2em 0;
+	text-align: center;
+	margin:0; /* Borra los espacios entre contenedores, por defecto el margin es 60 */
+}
+
+.Contact-title {
+	margin-top: 2.25em; /* tamaño del MainMenu, se le añade para que coja el ancho de este*/
+}
+
+.Contact-form {
+	text-align: center;
+	margin-top: 3.65em;
+	display: inline-block;
+	width: 32em;
+	text-align: center;
+}
+
+.Contact-formInput,
+.Contact-formTextArea {
+	border: none;
+	border-radius: 1em; /* pone borde al radio */
+	display: inline-block;
+	width: 28em; /* Permíteme crecer input a lo ancho */
+	padding: .5em;
+	margin: 0 auto 1em; /*Centra un elemento con dislay:block con un ancho dado y ponemos el margin-bottom*/
+}
+
+.Contact-formButton{
+	background: orange;
+	color: white;
+	border: none;
+	display: inline-block;
+	padding: 15px;
+	margin-top: .5em;
+	border: none;
+	border-radius: .5em; /* pone borde al radio */
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.Contact-formButton:hover,
+.Contact-formButton:focus,
+.Contact-formButton:active,
+.Contact-formButton.active {
+    color: white;
+    background: purple;
+}
+
+
+/* footer */
+
+.Contact-footer {
+	margin:0;
+	background: #1E1E1E;
+}
+
+p.Contact-description {
+	margin: 0;
+	padding-top: 1.2em;
+	height: 3.75em;
+	background: #1E1E1E;
+	text-align: center;
+	color: white;
+}
+
+.Contact-Me {
+	font-weight: bold;
+}
+
+/* AJAX Gif y mensajes de exito o fracaso */
+
+.msg{
+	border-radius: 1em;
+	border: none;
+    color: white;
+    display: inline-block;
+    margin-top: .5em;
+    height: 32px;
+    line-height: 32px;
+    width: 29.3em; /* Permíteme crecer input a lo ancho */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.msg_ok {
+    background: #589D05;
+}
+
+.msg_error {
+    background: red;
+}
